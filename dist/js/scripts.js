@@ -1,7 +1,7 @@
 /*!
-    * Start Bootstrap - SB UI Kit Pro v1.0.2 (https://shop.startbootstrap.com/product/sb-ui-kit-pro)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under SEE_LICENSE (https://github.com/BlackrockDigital/sb-ui-kit-pro/blob/master/LICENSE)
+    * Start Bootstrap - JMJ Wed Dev Portfolio v1.0.2 (https://jonayah.dev)
+    * Copyright 2013-2020 undefined
+    * Licensed under undefined (https://github.com/BlackrockDigital/jmj-web-dev-portfolio/blob/master/LICENSE)
     */
     (function($) {
     "use strict";
