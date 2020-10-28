@@ -52,7 +52,7 @@ block content
         sectionPadding: 'py-10',
         svgBorderAngled: false,
         svgBorderRounded: false,
-        svgBorderWaves: false,
+        svgBorderWaves: true,
         svgBorderFill: ''
     })
 
@@ -73,30 +73,10 @@ block content
                 //- DiaBeatThis!
                 .col-md-6.mb-5
                     a.card.card-portfolio.h-100(href='diabeatthis-project.html')
-                        img.card-img-top(src='assets/img/DiaBeatThis-homepage.png', alt='DiaBeatThis! application homepage screenshot')
+                        img.card-img-top(src='assets/img/DiaBeatThisLandingScreen.png', alt='DiaBeatThis! application homepage screenshot')
                         .card-body
                             .card-title DiaBeatThis! React Application
 
-    //- * * * * * * * * * * * * * * * *
-    //- * * Contact Button Section  * *
-    //- * * * * * * * * * * * * * * * *
-
-    include mixins/section.pug
-    +section({
-        sectionBg: 'bg-white',
-        sectionPadding: 'py-10',
-        svgBorderAngled: false,
-        svgBorderRounded: true,
-        svgBorderWaves: false,
-        svgBorderFill: 'text-dark'
-    })
-
-        .container
-            .row.justify-content-center
-                .col-xl-6.col-lg-8.col-md-10.text-center.py-5
-                    h2 Ready to get Started?
-                    p.lead.text-gray-500.mb-5 We'd love to hear from you about your branding and digital needs. We are currently accepting new clients.
-                    a(href='javascript:void(0);').btn.btn-primary.btn-marketing.rounded-pill Contact us
 
 block footer
 
