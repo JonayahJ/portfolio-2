@@ -63,13 +63,13 @@ block content
             form#contactUs(name="contact us form" method="POST" netlify data-netlify="true")
                 .form-row
                     .form-group.col-md-6
-                        label.text-dark(for='inputName') Full name
+                        label.text-dark(for='name') Full name
                         input#inputName.form-control.py-4(type='text', placeholder='Full name', name="name")
                     .form-group.col-md-6
-                        label.text-dark(for='inputEmail') Email
+                        label.text-dark(for='email') Email
                         input#inputEmail.form-control.py-4(type='email', placeholder='name@example.com', name="email")
                 .form-group
-                    label.text-dark(for='inputMessage') Message
+                    label.text-dark(for='message') Message
                     textarea#inputMessage.form-control.py-3(type='text', placeholder='Enter your message...', rows='4', name="message")
                 .text-center
                     button.btn.btn-primary.btn-marketing.mt-4(type='submit') Submit
