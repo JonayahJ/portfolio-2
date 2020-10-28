@@ -60,7 +60,7 @@ block content
     })
 
         .container
-            form
+            form#contactUs(name="contact us form" method="POST" netlify data-netlify="true")
                 .form-row
                     .form-group.col-md-6
                         label.text-dark(for='inputName') Full name
@@ -72,7 +72,7 @@ block content
                     label.text-dark(for='inputMessage') Message
                     textarea#inputMessage.form-control.py-3(type='text', placeholder='Enter your message...', rows='4')
                 .text-center
-                    button.btn.btn-primary.btn-marketing.mt-4(type='submit') Submit Request
+                    button.btn.btn-primary.btn-marketing.mt-4(type='submit') Submit
 
 
 

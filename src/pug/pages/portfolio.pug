@@ -3,7 +3,7 @@ extends ../layouts/default.pug
 block config
 
     //- Global Page Configuration
-    - var pageTitle = 'Portfolio Grid'
+    - var pageTitle = 'Portfolio'
 
 block content
 
@@ -13,12 +13,12 @@ block content
 
     include mixins/navbar.pug
     +navbar({
-        navbarBg: 'bg-white',
-        navbarStyle: 'navbar-light',
-        navbarBrandColor: 'text-dark',
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-white',
         navbarBtnColor: 'btn-teal',
         navbarContainer: 'container',
-        navbarPosition: ''
+        navbarPosition: 'fixed-top'
     })
 
     //- * * * * * * * * * *
@@ -39,8 +39,8 @@ block content
             .container.text-center
                 .row.justify-content-center
                     .col-lg-8
-                        h1.page-header-title.mb-3 Our work
-                        p.page-header-text.mb-0 A showcase of project's we've worked on in the past year
+                        h1.page-header-title.mb-3 My work
+                        p.page-header-text.mb-0 A sample of some projects that I've worked on in the past year
 
     //- * * * * * * * * *
     //- * * Portfolio * *
@@ -49,7 +49,7 @@ block content
     include mixins/section.pug
     +section({
         sectionBg: 'bg-light',
-        sectionPadding: 'pb-10',
+        sectionPadding: 'py-10',
         svgBorderAngled: false,
         svgBorderRounded: false,
         svgBorderWaves: false,
@@ -58,51 +58,24 @@ block content
 
         .container
             .row
-                .col-md-6.col-xl-4.mb-5.mt-n5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/jWQj5Wjepuk/700x500', alt='...')
+                //- EA project
+                .col-md-6.mb-5
+                    a.card.card-portfolio.h-100(href='ea-project.html')
+                        img.card-img-top(src='assets/img/EAscreenshot.png', alt='Earthworks Acupuncture homepage screenshot')
                         .card-body
-                            .card-title Book
-                .col-md-6.col-xl-4.mb-5.mt-md-n5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/Ecnx13MEPK0/700x500', alt='...')
+                            .card-title Earthworks Acupuncture Website on Squarespace
+                //- Neighborhood Quarantine Resources
+                .col-md-6.mb-5
+                    a.card.card-portfolio.h-100(href='nqr-project.html')
+                        img.card-img-top(src='assets/img/COVIDproject.png', alt='Neighborhood Quarantine Resources Application homepage screenshot')
                         .card-body
-                            .card-title Flower Mug
-                .col-md-6.col-xl-4.mb-5.mt-xl-n5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/eUCy1jb_B7I/700x500', alt='...')
+                            .card-title Neighborhood Quarantine Resources Web Application
+                //- DiaBeatThis!
+                .col-md-6.mb-5
+                    a.card.card-portfolio.h-100(href='diabeatthis-project.html')
+                        img.card-img-top(src='assets/img/DiaBeatThis-homepage.png', alt='DiaBeatThis! application homepage screenshot')
                         .card-body
-                            .card-title Cactus Display
-                .col-md-6.col-xl-4.mb-5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/cuTcfqsES6o/700x500', alt='...')
-                        .card-body
-                            .card-title Reading
-                .col-md-6.col-xl-4.mb-5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/jipR1oTCO7U/700x500', alt='...')
-                        .card-body
-                            .card-title White Book
-                .col-md-6.col-xl-4.mb-5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/n3sqjJzZiBM/700x500', alt='...')
-                        .card-body
-                            .card-title Photo Face
-                .col-md-6.col-xl-4.mb-5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/Zr7MxECDTQ8/700x500', alt='...')
-                        .card-body
-                            .card-title Catalog
-                .col-md-6.col-xl-4.mb-5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/QcyenJDqDzw/700x500', alt='...')
-                        .card-body
-                            .card-title Notebook
-                .col-md-6.col-xl-4.mb-5
-                    a.card.card-portfolio.h-100(href='#!')
-                        img.card-img-top(src='https://source.unsplash.com/TIutDBFEtcY/700x500', alt='...')
-                        .card-body
-                            .card-title Book Stand
+                            .card-title DiaBeatThis! React Application
 
     //- * * * * * * * * * * * * * * * *
     //- * * Contact Button Section  * *
