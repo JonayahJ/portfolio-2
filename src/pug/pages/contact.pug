@@ -60,17 +60,17 @@ block content
     })
 
         .container
-            form#contactUs(name="contact us form" method="POST" netlify data-netlify="true")
+            form(name="contact us form" method="POST" netlify data-netlify="true")
                 .form-row
                     .form-group.col-md-6
                         label.text-dark(for='inputName', name="Name") Full name
-                        input#inputName.form-control.py-4(type='text', id="name", placeholder='Full name', name="name")
+                        input#inputName.form-control.py-4(type='text', placeholder='Full name', name="name")
                     .form-group.col-md-6
                         label.text-dark(for='inputEmail', name="Email") Email
-                        input#inputEmail.form-control.py-4(type='email', id="email",  placeholder='name@example.com', name="email")
+                        input#inputEmail.form-control.py-4(type='email', placeholder='name@example.com', name="email")
                 .form-group
                     label.text-dark(for='inputMessage', name="Message") Message
-                    textarea#inputMessage.form-control.py-3(type='text', id="message", placeholder='Enter your message...', rows='4', name="message")
+                    textarea#inputMessage.form-control.py-3(type='text', placeholder='Enter your message...', rows='4', name="message")
                 .text-center
                     button.btn.btn-primary.btn-marketing.mt-4(type='submit') Submit
 
