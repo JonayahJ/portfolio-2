@@ -3,7 +3,7 @@ extends ../layouts/default.pug
 block config
 
     //- Global Page Configuration
-    - var pageTitle = 'Project'
+    - var pageTitle = 'Neighborhood Quarantine Resources App'
 
 block content
 
@@ -13,12 +13,12 @@ block content
 
     include mixins/navbar.pug
     +navbar({
-        navbarBg: 'bg-white',
-        navbarStyle: 'navbar-light',
-        navbarBrandColor: 'text-dark',
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-white',
         navbarBtnColor: 'btn-teal',
         navbarContainer: 'container',
-        navbarPosition: ''
+        navbarPosition: 'fixed-top'
     })
 
     //- * * * * * * * * * *
@@ -27,8 +27,8 @@ block content
 
     include mixins/header.pug
     +header({
-        pageHeaderBg: 'bg-img-cover overlay overlay-60',
-        pageHeaderBgImg: 'background-image: url("https://source.unsplash.com/RKwaj2g6OOU/1500x900")',
+        pageHeaderBg: 'bg-img-cover py-15',
+        pageHeaderBgImg: 'background-image: url("assets/img/portfolio-images/NQR/XBG.png")',
         pageHeaderStyle: 'page-header-dark',
         svgBorderAngled: false,
         svgBorderRounded: true,
@@ -36,12 +36,7 @@ block content
         svgBorderFill: 'text-light'
     })
 
-        .page-header-content
-            .container.text-center
-                .row.justify-content-center
-                    .col-lg-8
-                        h1.page-header-title.mb-3 Curology
-                        p.page-header-text.mb-0 Creating a flourishing skincare product brand
+        .my-15.py-lg-10
 
     //- * * * * * * * * *
     //- * * Portfolio * *
@@ -61,27 +56,26 @@ block content
             .row.justify-content-center
                 .col-lg-8
                     .text-center
-                        p.lead.mb-5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, labore voluptatibus temporibus fuga nisi at provident velit mollitia doloribus odio, asperiores, fugiat quod ullam necessitatibus atque earum aliquid repellat maiores.
+                        .col-lg-8
+                    h1 Neighborhood Quarantine Resources App
+                    p.lead Use your zip code to find nearby COVID-19 testing and free meal site locations.
+                    a.btn.btn-teal.btn-marketing.rounded-pill.lift.lift-sm(href="https://hexiangliu.github.io/COVID-Project/" target="_blank" rel="noopener noreferrer") Live Preview
+                    | &nbsp;
+                    a.btn.btn-outline-dark.btn-marketing.rounded-pill(href="https://github.com/HexiangLiu/COVID-Project" target="_blank" rel="noopener noreferrer") Github Repo
+                    hr
+                    p As COVID-19 quarantine guidelines begin to relax and local businesses reopen, many New Yorkers are feeling comfortable enough to leave their homes. In order to keep our vulnerable neighbors safe and taken care of, our application helps residents locate the nearest COVID-19 testing and free meal site locations based on zip code.
 
-                    img.img-fluid.shadow.rounded-lg.mb-2(src='https://source.unsplash.com/PDnw5MhJyKI/900x1200')
-                    .small.muted.font-italic.text-center.mb-5 Logo
-
-                    img.img-fluid.shadow.rounded-lg.mb-2(src='https://source.unsplash.com/E_dRKdBhxk4/900x1200')
-                    .small.muted.font-italic.text-center.mb-5 Packaging Design
-
-                    img.img-fluid.shadow.rounded-lg.mb-2(src='https://source.unsplash.com/0mbucN4QnJ0/900x600')
-                    .small.muted.font-italic.text-center.mb-5 Reflection
-
-                    img.img-fluid.shadow.rounded-lg.mb-2(src='https://source.unsplash.com/iKoH1gNON70/900x1300')
-                    .small.muted.font-italic.text-center.mb-5 Opening New Market Channels
-
-                    img.img-fluid.shadow.rounded-lg.mb-2(src='https://source.unsplash.com/s0yZ83xOBpM/900x600')
-                    .small.muted.font-italic.text-center.mb-5 Slow and Steady
-
-                    hr.my-5
+                    hr 
+                    <br />
+                .col-lg-10
+                    .card-columns.card-columns-case-study.mb-5
+                        .card
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/NQR/FortHamilton.png')
+                        .card
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/NQR/GramercyPark.png')
 
                     .text-center
-                        a.btn.btn-transparent-dark.btn-marketing.rounded-pill(href='page-portfolio-grid.html') Back to Projects
+                        a.btn.btn-transparent-dark.btn-marketing.rounded-pill(href='portfolio.html') Back to Projects
 
 
 block footer
