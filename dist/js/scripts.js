@@ -1,6 +1,6 @@
 /*!
     * Start Bootstrap - JMJ Wed Dev Portfolio v1.0.2 (https://jonayah.dev)
-    * Copyright 2013-2020 undefined
+    * Copyright 2013-2021 undefined
     * Licensed under undefined (https://github.com/BlackrockDigital/jmj-web-dev-portfolio/blob/master/LICENSE)
     */
     (function($) {

@@ -1,0 +1,96 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Yego Coffee React + Shopify'
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-transparent',
+        navbarStyle: 'navbar-dark',
+        navbarBrandColor: 'text-white',
+        navbarBtnColor: 'btn-teal',
+        navbarContainer: 'container',
+        navbarPosition: 'fixed-top'
+    })
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-img-cover py-15',
+        pageHeaderBgImg: 'background-image: url("assets/img/YCWeb2screenshot.png")',
+        pageHeaderStyle: 'page-header-dark',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .my-15.py-lg-10
+    //- * * * * * * * * *
+    //- * * Portfolio * *
+    //- * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-dark'
+    })
+
+        .container
+            .row.justify-content-center
+                .col-lg-8
+                    .text-center
+                        .col-lg-8
+                    h1 Yego Coffee Website
+                    p.lead A react website with a shopify integration via a separate subdomain for a coffee retailer based in Boston.
+                    a.btn.btn-teal.btn-marketing.rounded-pill.lift.lift-sm(href="https://yegocoffee.com/" target="_blank" rel="noopener noreferrer") Live Preview
+                    | &nbsp;
+                    a.btn.btn-outline-dark.btn-marketing.rounded-pill(href="https://github.com/JonayahJ/ycweb-main" target="_blank" rel="noopener noreferrer") Github Repo
+                    
+                    hr
+
+                    h2 Yego Coffee needed help rebranding their Boston-based genuine Rwandan coffee retail and wholesale website. 
+                    p It was important that Yego Coffee have a central location to promote both green and roasted coffee, without losing their current clientele base.
+                    p In order to set him up for increased integration with Shopify and ShipStation, I used a react website for his front end and then added in a subdomain for the shop and account management.
+
+                
+                .col-lg-10
+                    img.img-fluid.rounded-lg.shadow.my-5(src='assets/img/portfolio-images/Yego-Coffee/Testimonial.png')
+
+                .col-lg-10
+                    .card-columns.card-columns-case-study.mb-5
+                        .card
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/Yego-Coffee/AboutHome.png')
+                        .card
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/Yego-Coffee/BlogPost.png')
+                        .card
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/Yego-Coffee/TryOurCoffee.png')
+                        .card
+                            img.img-fluid.rounded-lg(src='assets/img/portfolio-images/Yego-Coffee/DarkRoast.png') 
+  
+
+                    .text-center
+                        a.btn.btn-transparent-dark.btn-marketing.rounded-pill(href='portfolio.html') Back to Projects
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })
